@@ -1,14 +1,20 @@
-# Welcome to your Lovable project
+# Eden Design Studio
+
+je veux un site web 
+change le design en un jolie professionel et coloré 
+la clé pour generer les image et modifie le temps et le numero de ticket est sk-eden-live-gfgTULDUuK4FRrkSBNmNSNjF9VDatI50G2WtUpSoMf0896cf5ca
 
 This project was built with [Lovable](https://lovable.dev).
 
+**Live app**: https://hues-and-styles.lovable.app
+
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/94b3c30f-9610-47cf-9ccb-074861c1390f).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +26,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
