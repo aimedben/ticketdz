@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep ticket rendering client-side on a canvas with a permanent DEMO watermark, so previews stay fast and cannot be mistaken for genuine receipts.
