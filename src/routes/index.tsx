@@ -37,7 +37,9 @@ function Index() {
     if (!studio) return;
     const image = new window.Image();
     image.crossOrigin = "anonymous";
-    image.src = tickets[ticket];
+    const ticketSource = tickets[ticket];
+    if (!ticketSource) return;
+    image.src = ticketSource;
     image.onload = () => {
       const canvas = canvasRef.current;
       if (!canvas) return;
@@ -161,7 +163,7 @@ function Index() {
         </section>
       </div>
 
-      {fullscreen && <div className="fixed inset-0 z-50 grid place-items-center bg-foreground/95 p-3" role="dialog" aria-modal="true"><Button variant="secondary" size="icon" onClick={() => setFullscreen(false)} className="absolute right-4 top-4" aria-label="Fermer"><X size={20} /></Button><img src={canvasRef.current?.toDataURL("image/png")} alt="Ticket personnalisé en plein écran" className="max-h-[94vh] max-w-full object-contain" /></div>}
+      {fullscreen && <div className="fixed inset-0 z-50 grid place-items-center bg-foreground/95 p-3" role="dialog" aria-modal="true"><Button variant="secondary" size="icon" onClick={() => setFullscreen(false)} className="absolute right-4 top-4" aria-label="Fermer"><X size={20} /></Button><img src={canvasRef.current?.toDataURL("image/png") ?? ""} alt="Ticket personnalisé en plein écran" className="max-h-[94vh] max-w-full object-contain" /></div>}
     </main>
   );
 }
